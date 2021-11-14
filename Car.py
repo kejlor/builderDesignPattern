@@ -6,5 +6,5 @@ class Car:
         self.amount_of_doors = amount_of_doors
 
     def __str__(self):
-        return f"This is a car of colour: {self.colour} with an {self.engine} " \
-         "engine and with {self.amount_of_doors} doors"
+        return f"This is {self.colour} car with a {self.engine} " \
+         f"engine and with {self.amount_of_doors} doors"

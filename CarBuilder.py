@@ -5,7 +5,7 @@ from ICarBuilder import ICarBuilder
 class CarBuilder(ICarBuilder):
 
     def __init__(self):
-        self.car = Car()
+        self.reset()
 
     def set_colour(self, value):
         self.car.colour = value
@@ -18,3 +18,11 @@ class CarBuilder(ICarBuilder):
 
     def get_result(self):
         return self.car
+
+    def car(self) -> Car:
+        car = self.car
+        self.reset()
+        return car
+
+    def reset(self) -> None:
+        self.car = Car()
