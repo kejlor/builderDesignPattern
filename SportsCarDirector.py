@@ -1,7 +1,7 @@
 from CarBuilder import CarBuilder
 
 
-class SportsCarDirectory:
+class SportsCarDirector:
     @staticmethod
     def construct():
         constructed_car = CarBuilder()
