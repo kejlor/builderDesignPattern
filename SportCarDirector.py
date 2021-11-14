@@ -16,7 +16,7 @@ class SportCarDirector:
     def build_sport_car(self) -> None:
         self.builder.set_amount_of_doors(3)
         self.builder.set_colour("Black")
-        self.builder.set_engine("R6")
+        self.builder.set_engine("V6")
 
     def build_super_sport_car(self) -> None:
         self.builder.set_amount_of_doors(2)
